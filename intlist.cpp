@@ -55,6 +55,8 @@ double IntList::average() const {
     counter++;
     n=n->next;
   }
+  if (counter==0)
+    return average;
   average=(average/counter);
   return average;
 }
